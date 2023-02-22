@@ -1,8 +1,8 @@
 //cost model text file for ABC
 // 12-4-97
 
-CPU_READ:       0.0003     // cpu cost of reading one block from the disk
-TOUCH_COPY:     0.0001	    //cpu cost of copying one tuple to the next operator
+CPU_READ:       0.0003      // cpu cost of reading one block from the disk
+TOUCH_COPY:     0.0001	    // cpu cost of copying one tuple to the next operator
 CPU_PRED:       0.00001 	// cpu cost of evaluating one predicate
 CPU_APPLY:      0.00002 	// cpu cost of applying function on one attribute
 CPU_COMP_MOVE:  0.00003 	// cpu cost of comparing and moving tuples
