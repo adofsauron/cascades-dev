@@ -3,6 +3,8 @@
 out/
 obj/
 bin/
+Debug/
+Release/
 *.tar.gz
 *.tar.bz2
 *.out
