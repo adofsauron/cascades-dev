@@ -43,18 +43,4 @@ D:\work\code\cascades-dev\cascades\src\main.cpp(357,39): warning C4244: “=”:
   ChildView.cpp
   MainFrm.cpp
   正在生成代码...
-cascades.obj : error LNK2005: "public: __thiscall CAboutDlg::CAboutDlg(void)" (??0CAboutDlg@@QAE@XZ) 已经在 wcol.obj 中定义
-cascades.obj : error LNK2005: "protected: virtual void __thiscall CAboutDlg::DoDataExchange(class CDataExchange *)" (?DoDataExchange@CAboutDlg@@MAEXPAVCDataExchange@@@Z) 已经在 wcol.obj 中定义
-cascades.obj : error LNK2005: "protected: virtual struct AFX_MSGMAP const * __thiscall CAboutDlg::GetMessageMap(void)const " (?GetMessageMap@CAboutDlg@@MBEPBUAFX_MSGMAP@@XZ) 已经在 wcol.obj 中定义
-cascades.obj : error LNK2005: "protected: static struct AFX_MSGMAP const * __stdcall CAboutDlg::GetThisMessageMap(void)" (?GetThisMessageMap@CAboutDlg@@KGPBUAFX_MSGMAP@@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: virtual __thiscall CMainFrame::~CMainFrame(void)" (??1CMainFrame@@UAE@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: virtual void __thiscall CMainFrame::AssertValid(void)const " (?AssertValid@CMainFrame@@UBEXXZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: virtual void __thiscall CMainFrame::Dump(class CDumpContext &)const " (?Dump@CMainFrame@@UBEXAAVCDumpContext@@@Z) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "protected: virtual struct AFX_MSGMAP const * __thiscall CMainFrame::GetMessageMap(void)const " (?GetMessageMap@CMainFrame@@MBEPBUAFX_MSGMAP@@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: virtual struct CRuntimeClass * __thiscall CMainFrame::GetRuntimeClass(void)const " (?GetRuntimeClass@CMainFrame@@UBEPAUCRuntimeClass@@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: static struct CRuntimeClass * __stdcall CMainFrame::GetThisClass(void)" (?GetThisClass@CMainFrame@@SGPAUCRuntimeClass@@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "protected: static struct AFX_MSGMAP const * __stdcall CMainFrame::GetThisMessageMap(void)" (?GetThisMessageMap@CMainFrame@@KGPBUAFX_MSGMAP@@XZ) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "public: virtual int __thiscall CMainFrame::PreCreateWindow(struct tagCREATESTRUCTA &)" (?PreCreateWindow@CMainFrame@@UAEHAAUtagCREATESTRUCTA@@@Z) 已经在 wcol.obj 中定义
-MainFrm.obj : error LNK2005: "protected: static struct CRuntimeClass * __stdcall CMainFrame::_GetBaseClass(void)" (?_GetBaseClass@CMainFrame@@KGPAUCRuntimeClass@@XZ) 已经在 wcol.obj 中定义
-msvcrtd.lib(exe_wwinmain.obj) : error LNK2019: 无法解析的外部符号 _wWinMain@16，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
-D:\work\code\cascades-dev\cascades\cascades\Debug\cascades.exe : fatal error LNK1120: 1 个无法解析的外部命令
+D:\work\code\cascades-dev\cascades\cascades\MainFrm.cpp : fatal error C1090: PDB API 调用失败，错误代码“3”: D:\work\code\cascades-dev\cascades\cascades\Debug\vc142.pdb
