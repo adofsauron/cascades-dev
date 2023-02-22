@@ -3,17 +3,18 @@
 //
 
 #include "pch.h"
-#include "framework.h"
 #include "afxwinappex.h"
 #include "afxdialogex.h"
 #include "cascades.h"
-#include "MainFrm.h"
 
+#include "../src/wcol.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
+
+#if 0
 
 // CcascadesApp
 
@@ -164,4 +165,4 @@ void CcascadesApp::OnAppAbout()
 // CcascadesApp 消息处理程序
 
 
-
+#endif

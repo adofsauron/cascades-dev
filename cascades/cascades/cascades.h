@@ -10,6 +10,8 @@
 #include "resource.h"       // 主符号
 
 
+#if 0
+
 // CcascadesApp:
 // 有关此类的实现，请参阅 cascades.cpp
 //
@@ -33,3 +35,6 @@ public:
 };
 
 extern CcascadesApp theApp;
+
+#endif
+

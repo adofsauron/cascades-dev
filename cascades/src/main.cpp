@@ -464,3 +464,9 @@ void Optimizer()
   OutputFile.Close();
   OutputCOVE.Close();
 }
+
+int main()
+{
+  printf("hello\n");
+  printf("world\n");
+}
