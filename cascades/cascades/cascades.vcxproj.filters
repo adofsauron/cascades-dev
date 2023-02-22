@@ -14,10 +14,31 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{bb00d9a7-ade5-482c-90e5-469e0351a530}</UniqueIdentifier>
+      <UniqueIdentifier>{ce203883-b920-4e7f-bf7f-28c047fda125}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cascades.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\bm.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -71,6 +92,18 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cascades.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\bm.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -87,6 +120,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\item.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\logop.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\main.cpp">
@@ -126,85 +162,16 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\file_view.ico">
+    <None Include="res\cascades.rc2">
       <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\file_view_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\class_view.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\class_view_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\fileview.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\fileview_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\classview.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\classview_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\explorer.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\explorer_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\sort.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\sort_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\menuimages.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\menuimages_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\output_wnd.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\output_wnd_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_wnd.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_wnd_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\userimages.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\cascadesDoc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <Image Include="res\cascades.ico">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Toolbar.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="res\Toolbar256.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\cascades.rc2">
-      <Filter>资源文件</Filter>
-    </None>
   </ItemGroup>
 </Project>

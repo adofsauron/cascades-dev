@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{4FE3313F-47DC-42F8-B97F-29486E2FE306}</ProjectGuid>
+    <ProjectGuid>{C99D905E-CCC3-4365-A133-813FFEB19FA7}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
     <RootNamespace>cascades</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -91,9 +91,9 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <UndefinePreprocessorDefinitions>UNICODE;_UNICODE;</UndefinePreprocessorDefinitions>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -201,6 +201,13 @@
     <ClInclude Include="..\src\supp.h" />
     <ClInclude Include="..\src\tasks.h" />
     <ClInclude Include="..\src\wcol.h" />
+    <ClInclude Include="cascades.h" />
+    <ClInclude Include="ChildView.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\bm.cpp" />
@@ -209,6 +216,7 @@
     <ClCompile Include="..\src\expr.cpp" />
     <ClCompile Include="..\src\group.cpp" />
     <ClCompile Include="..\src\item.cpp" />
+    <ClCompile Include="..\src\logop.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\mexpr.cpp" />
     <ClCompile Include="..\src\physop.cpp" />
@@ -219,39 +227,25 @@
     <ClCompile Include="..\src\supp.cpp" />
     <ClCompile Include="..\src\tasks.cpp" />
     <ClCompile Include="..\src\wcol.cpp" />
+    <ClCompile Include="cascades.cpp" />
+    <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="cascades.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\cascades.ico" />
-    <Image Include="res\cascadesDoc.ico" />
-    <Image Include="res\classview.bmp" />
-    <Image Include="res\classview_hc.bmp" />
-    <Image Include="res\class_view.ico" />
-    <Image Include="res\class_view_hc.ico" />
-    <Image Include="res\explorer.bmp" />
-    <Image Include="res\explorer_hc.bmp" />
-    <Image Include="res\fileview.bmp" />
-    <Image Include="res\fileview_hc.bmp" />
-    <Image Include="res\file_view.ico" />
-    <Image Include="res\file_view_hc.ico" />
-    <Image Include="res\menuimages.bmp" />
-    <Image Include="res\menuimages_hc.bmp" />
-    <Image Include="res\output_wnd.ico" />
-    <Image Include="res\output_wnd_hc.ico" />
-    <Image Include="res\properties.bmp" />
-    <Image Include="res\properties_hc.bmp" />
-    <Image Include="res\properties_wnd.ico" />
-    <Image Include="res\properties_wnd_hc.ico" />
-    <Image Include="res\sort.bmp" />
-    <Image Include="res\sort_hc.bmp" />
-    <Image Include="res\Toolbar.bmp" />
-    <Image Include="res\Toolbar256.bmp" />
-    <Image Include="res\userimages.bmp" />
+    <None Include="res\cascades.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\cascades.rc2" />
+    <Image Include="res\cascades.ico" />
+    <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
